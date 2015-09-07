@@ -14,6 +14,6 @@ def prime_factor(number):
     arr = []
     for i in range(2, number):
         if number % i == 0 and is_prime(i):
-
             arr.append(i)
+            number /= i
     return arr
